@@ -5,7 +5,6 @@ export default function MainPage() {
     <div className="">
       <Home />
       <Video />
-      <div className="h-screen bg-black" />
     </div>
   );
 }

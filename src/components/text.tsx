@@ -11,9 +11,10 @@ const sixCaps = Six_Caps({
 
 interface AnimatedTextProps {
   text: string;
+  down?: boolean; // Add the down prop
 }
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, down = false }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const containerRef = useRef<HTMLHeadingElement>(null);
 
@@ -58,7 +59,10 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
                 : Math.max(1, 1.3638 - Math.abs(index - hoveredIndex) * 0.1),
           }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          style={{ display: "inline-block", transformOrigin: "bottom" }}
+          style={{
+            display: "inline-block",
+            transformOrigin: down ? "top" : "bottom",
+          }}
         >
           {letter}
         </motion.span>
