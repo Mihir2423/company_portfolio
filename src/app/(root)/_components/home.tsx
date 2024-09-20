@@ -1,21 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./style.module.css";
-import { Six_Caps } from "next/font/google";
+import { AnimatedText } from "@/components/text";
 
-const sixCaps = Six_Caps({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+
 
 export const Home = () => {
+  const company = "Shadebyte";
   return (
     <div className="relative flex flex-col justify-center items-center gap-4 w-screen h-screen text-center">
-      <h1
-        className={`font-bold text-[calc(1rem+16.15vw)] ${sixCaps.className} text-white uppercase leading-[calc(1rem+14.15vw)]`}
-      >
-        Shadebyte
-      </h1>
+      <AnimatedText text={company} />
       <div className="flex flex-col justify-center items-center text-[#6d6d6d] text-center uppercase">
         <p>We create products that serves both users</p>
         <p>and businesses and drive real results.</p>
