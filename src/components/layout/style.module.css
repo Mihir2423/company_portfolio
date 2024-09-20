@@ -1,0 +1,41 @@
+.button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.burger {
+  width: 100%;
+}
+
+.burger::after,
+.burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+.burger::after {
+  top: -5px;
+}
+.burger::before {
+  top: 5px;
+}
+.burgerActive::after {
+  transform: rotate(45deg);
+  background-color: white;
+  top: -1px;
+}
+.burgerActive::before {
+  transform: rotate(-45deg);
+  background-color: white;
+  top: 0px;
+}

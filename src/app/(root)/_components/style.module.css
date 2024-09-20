@@ -1,0 +1,42 @@
+.scroll {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  animation: down 2.5s infinite;
+  -webkit-animation: down 2.5s infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
