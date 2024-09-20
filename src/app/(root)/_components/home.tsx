@@ -42,7 +42,7 @@ export const Home = () => {
         <div className="flex justify-center items-center bg-green-500 rounded-full size-3">
           <div className="bg-green-500 rounded-full animate-ping size-3" />
         </div>
-        <h1 className="font-normal text-sm">Let&apos;s Connect!</h1>
+        <h1 className="font-normal text-sm">Let&apos;s Build!</h1>
       </div>
       <div className="bottom-10 absolute flex flex-col justify-center items-center px-10">
         <div className={styles.scroll} />
