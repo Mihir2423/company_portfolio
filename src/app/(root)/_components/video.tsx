@@ -18,7 +18,7 @@ export const Video = () => {
     <div ref={containerRef} className="relative h-[200vh]">
       <div
         ref={stickyRef}
-        className="top-0 sticky w-screen h-screen overflow-hidden"
+        className="top-0 sticky m-0 p-0 w-screen h-screen overflow-hidden"
       >
         <div className="relative z-auto inset-0 p-0 w-full h-full">
           <motion.div
@@ -40,7 +40,7 @@ export const Video = () => {
           </motion.div>
         </div>
         <div
-          className="bottom-0 z-[10] absolute w-full h-[370px]"
+          className="bottom-0 z-[10] absolute w-full h-[370px] translate-y-[5px]"
           style={{
             maskImage: "linear-gradient(transparent, black 85%)",
             backgroundColor: "rgb(12, 12, 12)",
