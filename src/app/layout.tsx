@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
- metadataBase: new URL(process.env.NEXTAUTH_URL || "https://company-portfolio.vercel.app"),
+ metadataBase: new URL(process.env.NEXTAUTH_URL || "https://shadebyte.vercel.app/"),
  keywords:
    "web development, mobile development, SEO, design, consulting, marketing, Shadebyte, client solutions, business growth",
  title: "Shadebyte | Client-Focused Product Development",

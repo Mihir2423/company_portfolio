@@ -3,33 +3,44 @@
 import React from "react";
 import { Six_Caps } from "next/font/google";
 import { toast } from "sonner";
+interface FormDataShape {
+  text: string;
+  email: string;
+  message: string;
+}
 
 const sixCaps = Six_Caps({
   weight: ["400"],
   subsets: ["latin"],
 });
-type Props = {};
 
-export const MessageForm = (props: Props) => {
+export const MessageForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData);
+    const entries = Object.fromEntries(formData) as unknown as {
+      [k: string]: FormDataEntryValue;
+    };
+    const data: FormDataShape = {
+      text: entries["text"]?.toString() || "",
+      email: entries["email"]?.toString() || "",
+      message: entries["message"]?.toString() || "",
+    };
 
     if (
       !data.text ||
-      data.text.toString().trim() === "" ||
+      data.text.trim() === "" ||
       !data.email ||
-      data.text.toString().trim() === "" ||
+      data.email.trim() === "" ||
       !data.message ||
-      data.message.toString().trim() === ""
+      data.message.trim() === ""
     ) {
       toast.error("Please fill in all the fields");
       return;
     }
+
     toast.success("Message sent successfully");
     e.currentTarget.reset();
-    return;
   };
   return (
     <div className="flex flex-col justify-center items-center gap-32 px-10 h-screen">

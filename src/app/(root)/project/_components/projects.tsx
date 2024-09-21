@@ -5,9 +5,8 @@ import Image from "next/image";
 import React from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-type Props = {};
 
-export const Projects = (props: Props) => {
+export const Projects = () => {
   return (
     <ParallaxProvider>
       <div className="gap-y-36 grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 py-44 min-h-screen">
