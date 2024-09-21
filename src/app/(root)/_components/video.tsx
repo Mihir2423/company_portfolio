@@ -12,7 +12,7 @@ export const Video = () => {
     offset: ["start start", "end start"],
   });
 
-  const clipPathProgress = useTransform(scrollYProgress, [0, 0.6], [20, 75]);
+  const clipPathProgress = useTransform(scrollYProgress, [0, 0.5], [20, 80]);
 
   return (
     <div ref={containerRef} className="relative h-[200vh]">
