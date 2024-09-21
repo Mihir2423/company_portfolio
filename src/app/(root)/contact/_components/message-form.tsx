@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Six_Caps } from "next/font/google";
+import { toast } from "sonner";
 
 const sixCaps = Six_Caps({
   weight: ["400"],
@@ -15,10 +16,20 @@ export const MessageForm = (props: Props) => {
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
 
-    if (!data.text || !data.email || !data.message) return;
-    else console.log(data);
-
-    e.currentTarget.reset(); 
+    if (
+      !data.text ||
+      data.text.toString().trim() === "" ||
+      !data.email ||
+      data.text.toString().trim() === "" ||
+      !data.message ||
+      data.message.toString().trim() === ""
+    ) {
+      toast.error("Please fill in all the fields");
+      return;
+    }
+    toast.success("Message sent successfully");
+    e.currentTarget.reset();
+    return;
   };
   return (
     <div className="flex flex-col justify-center items-center gap-32 px-10 h-screen">
