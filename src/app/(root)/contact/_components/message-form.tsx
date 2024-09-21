@@ -43,7 +43,7 @@ export const MessageForm = (props: Props) => {
         className="flex flex-col justify-center items-center gap-8 w-full md:w-[600px]"
       >
         <div className="flex max-md:flex-col items-center gap-8 w-full">
-          <div className="flex-1 border-white px-0 pb-2 border-b max-md:w-full">
+          <div className="border-white px-0 pb-2 border-b w-1/2 max-md:w-full">
             <input
               type="text"
               name="text"
@@ -51,7 +51,7 @@ export const MessageForm = (props: Props) => {
               className="border-0 bg-transparent placeholder:font-medium text-medium text-white placeholder:text-white outline-none"
             />
           </div>
-          <div className="flex-1 border-white px-0 pb-2 border-b max-md:w-full">
+          <div className="border-white px-0 pb-2 border-b w-1/2 max-md:w-full">
             <input
               type="email"
               name="email"
@@ -60,7 +60,7 @@ export const MessageForm = (props: Props) => {
             />
           </div>
         </div>
-        <div className="border-white md:mt-8 px-0 pb-2 border-b w-full">
+        <div className="border-white md:mt-8 md:ml-8 px-0 pb-2 border-b w-full md:w-[624px]">
           <textarea
             placeholder="Tell us about yourself"
             name="message"

@@ -16,7 +16,6 @@ const sixCaps = Six_Caps({
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  // Animation variants
   const linkVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -51,6 +50,7 @@ export const Navbar = () => {
                 >
                   <Link
                     href={route.path}
+                    onClick={() => setIsOpen(false)}
                     className={`${sixCaps.className} text-[6rem] leading-[5rem] md:text-[8rem] md:leading-[7rem] text-white`}
                   >
                     {route.title}

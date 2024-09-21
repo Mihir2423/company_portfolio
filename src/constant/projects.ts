@@ -24,4 +24,22 @@ export const PROJECTS: Project[] = [
     year: 2023,
     text: "Photography",
   },
+  {
+    title: "Lily Radziemski",
+    src: "/images/fourth.jpg",
+    year: 2021,
+    text: "Visual Arts",
+  },
+  {
+    title: "Nina Wolff",
+    src: "/images/fifth.jpg",
+    year: 2020,
+    text: "Graphic Design",
+  },
+  {
+    title: "Oscar Lindh",
+    src: "/images/sixth.jpg",
+    year: 2023,
+    text: "Digital Illustration",
+  },
 ];

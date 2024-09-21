@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
 import styles from "./style.module.css";
 import { AnimatedText } from "@/components/text";
+import { useRouter } from "next/navigation";
 
 type Props = {
   text: string;
@@ -11,6 +14,11 @@ type Props = {
 
 export const Home = ({ text, description, connectBtn }: Props) => {
   const company = text;
+  const router = useRouter();
+  const handleScrollToBottom = () => {
+    router.push("/contact");
+  };
+
   return (
     <div className="relative flex flex-col justify-center items-center gap-4 w-screen h-screen text-center">
       <AnimatedText text={company} />
@@ -20,7 +28,7 @@ export const Home = ({ text, description, connectBtn }: Props) => {
         ))}
       </div>
       {connectBtn && (
-        <div className="flex items-center gap-2 bg-white mt-4 px-3 py-2 rounded-md transition-all duration-500 cursor-pointer ease-in-out group">
+        <div onClick={handleScrollToBottom} className="flex items-center gap-2 bg-white mt-4 px-3 py-2 rounded-md transition-all duration-500 cursor-pointer ease-in-out group">
           <div className="relative">
             <Image
               src="/icons/add.svg"

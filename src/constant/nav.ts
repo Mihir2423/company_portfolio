@@ -5,7 +5,7 @@ export const NAV_ROUTES = [
   },
   {
     title: "Projects",
-    path: "/projects",
+    path: "/project",
   },
   {
     title: "Contact",

@@ -100,7 +100,7 @@ const Work = () => {
       <div className="flex flex-col justify-center items-center gap-4 py-4 text-[#6d6d6d] text-center text-xl md:text-2xl">
         <p className="uppercase">Elevating Digital Experiences with Cutting-Edge Innovation</p>
         <Link
-          href={"/work"}
+          href={"/project"}
           className="border-white px-4 py-2 border rounded-[20px] text-base text-white"
         >
           See All Works
