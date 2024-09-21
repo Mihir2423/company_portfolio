@@ -3,7 +3,7 @@ import { AnimatedText } from "./text";
 
 export const Contact = () => {
   return (
-    <div className="relative flex justify-center items-center w-screen h-screen text-center">
+    <div className="relative flex justify-center items-center px-8 w-screen h-screen text-center">
       <div className="flex flex-col justify-center items-center gap-4 text-[#6d6d6d] text-center uppercase">
         <p>Contact us and let&apos;s bring your vision to life</p>
         <AnimatedText text={"Contact"} down />
