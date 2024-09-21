@@ -10,16 +10,16 @@ type Props = {};
 export const Projects = (props: Props) => {
   return (
     <ParallaxProvider>
-      <div className="gap-y-36 grid grid-cols-2 px-3 md:px-10 py-44 min-h-screen">
+      <div className="gap-y-36 grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 py-44 min-h-screen">
         <div className="col-span-1">
           <Parallax speed={20}>
-            <div className="flex flex-col gap-3 w-[500px] group">
-              <div className="rounded-md h-[700px] overflow-hidden">
+            <div className="flex flex-col gap-3 w-full md:w-[500px] group">
+              <div className="rounded-md h-[500px] md:h-[700px] overflow-hidden">
                 <Image
                   src={PROJECTS[0].src}
                   width={500}
                   height={700}
-                  className="w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
+                  className="w-full md:w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
                   alt="project-1"
                 />
               </div>
@@ -32,13 +32,13 @@ export const Projects = (props: Props) => {
         </div>
         <div className="flex justify-end items-center col-span-1">
           <Parallax speed={-10}>
-            <div className="flex flex-col gap-3 w-[500px] group">
-              <div className="rounded-md w-[500px] h-[500px] overflow-hidden">
+            <div className="flex flex-col gap-3 w-full md:w-[500px] group">
+              <div className="rounded-md w-full md:w-[500px] h-[500px] overflow-hidden">
                 <Image
                   src={PROJECTS[1].src}
                   width={500}
                   height={500}
-                  className="w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
+                  className="w-full md:w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
                   alt="project-1"
                 />
               </div>
@@ -49,15 +49,15 @@ export const Projects = (props: Props) => {
             </div>
           </Parallax>
         </div>
-        <div className="flex justify-center items-center col-span-2">
+        <div className="flex justify-center items-center col-span-1 md:col-span-2">
           <Parallax speed={10}>
-            <div className="flex flex-col gap-3 w-[700px] group">
-              <div className="rounded-md w-[700px] h-[700px] overflow-hidden">
+            <div className="flex flex-col gap-3 w-full md:w-[700px] group">
+              <div className="rounded-md w-full md:w-[700px] h-[500px] md:h-[700px] overflow-hidden">
                 <Image
                   src={PROJECTS[2].src}
                   width={700}
                   height={700}
-                  className="w-[700px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
+                  className="w-full md:w-[700px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
                   alt="project-1"
                 />
               </div>
@@ -70,13 +70,13 @@ export const Projects = (props: Props) => {
         </div>
         <div className="flex items-center col-span-1">
           <Parallax speed={-10}>
-            <div className="flex flex-col gap-3 w-[500px] group">
-              <div className="rounded-md w-[500px] h-[500px] overflow-hidden">
+            <div className="flex flex-col gap-3 w-full md:w-[500px] group">
+              <div className="rounded-md w-full md:w-[500px] h-[500px] overflow-hidden">
                 <Image
                   src={PROJECTS[3].src}
                   width={500}
                   height={500}
-                  className="w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
+                  className="w-full md:w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
                   alt="project-1"
                 />
               </div>
@@ -89,13 +89,13 @@ export const Projects = (props: Props) => {
         </div>
         <div className="flex justify-end col-span-1">
           <Parallax speed={20}>
-            <div className="flex flex-col gap-3 w-[500px] group">
-              <div className="rounded-md h-[700px] overflow-hidden">
+            <div className="flex flex-col gap-3 w-full md:w-[500px] group">
+              <div className="rounded-md w-full h-[500px] md:h-[700px] overflow-hidden">
                 <Image
                   src={PROJECTS[4].src}
                   width={500}
                   height={700}
-                  className="w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
+                  className="w-full md:w-[500px] h-full object-cover hover:scale-[1.05] transition-transform duration-500 ease-in-out"
                   alt="project-1"
                 />
               </div>
@@ -107,10 +107,10 @@ export const Projects = (props: Props) => {
           </Parallax>
         </div>
 
-        <div className="flex justify-center items-center col-span-2">
+        <div className="flex justify-center items-center col-span-1 md:col-span-2">
           <Parallax speed={10}>
-            <div className="flex flex-col gap-3 w-[700px] group">
-              <div className="rounded-md w-[700px] h-[700px] overflow-hidden">
+            <div className="flex flex-col gap-3 md:w-[700px] group">
+              <div className="rounded-md w-full md:w-[700px] h-[500px] md:h-[700px] overflow-hidden">
                 <Image
                   src={PROJECTS[5].src}
                   width={700}

@@ -13,7 +13,7 @@ export default function ContactPage() {
       <MessageForm />
       <Contact
         text="projects"
-        link="projects"
+        link="/project"
         description="Explore the impact of our innovative solutions."
       />
     </div>

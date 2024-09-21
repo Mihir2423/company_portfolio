@@ -84,8 +84,8 @@ const Work = () => {
             </motion.div>
           </div>
         </div>
-        {PROJECTS.map((project, index) => {
-          const targetScale = 1 - (PROJECTS.length - index) * 0.1;
+        {PROJECTS.slice(0,3).map((project, index) => {
+          const targetScale = 1 - (PROJECTS.slice(0,3).length - index) * 0.1;
           return (
             <Card
               key={index}
