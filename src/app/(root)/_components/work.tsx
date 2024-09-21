@@ -1,10 +1,18 @@
 "use client";
-import React from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView, useScroll } from "framer-motion";
+import { Card } from "./card";
+import { PROJECTS } from "@/constant/projects";
 
 const Work = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const mainContainer = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: mainContainer,
+    offset: ["start start", "end end"],
+  });
 
   const letters = Array.from("Projects");
   const container = {
@@ -37,10 +45,10 @@ const Work = () => {
   };
 
   return (
-    <div className="relative min-h-[200vh]">
+    <div ref={mainContainer} className="relative min-h-[200vh]">
+      <div ref={ref} className="top-[500px] absolute w-[400px]" />
       <div className="top-0 left-0 sticky w-screen h-screen">
         <div className="relative flex flex-col justify-center items-center mx-auto h-screen">
-          <div ref={ref} className="top-[500px] absolute w-[400px]" />
           <motion.div
             variants={container}
             initial="hidden"
@@ -70,7 +78,18 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      
+      {PROJECTS.map((project, index) => {
+        const targetScale = 1 - (PROJECTS.length - index) * 0.05;
+        return (
+          <Card
+            key={index}
+            project={project}
+            progress={scrollYProgress}
+            range={[index * 0.25, 1]}
+            targetScale={targetScale}
+          />
+        );
+      })}
     </div>
   );
 };
