@@ -1,4 +1,4 @@
-import { Home, Video, Work } from "./_components";
+import { Home, Video, Work, Services } from "./_components";
 
 export default function MainPage() {
   return (
@@ -6,6 +6,7 @@ export default function MainPage() {
       <Home />
       <Video />
       <Work />
+      <Services />
     </div>
   );
 }
