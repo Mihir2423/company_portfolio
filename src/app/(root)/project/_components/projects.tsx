@@ -23,7 +23,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[0].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[0].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[0].text}</h1>
               </div>
             </div>
@@ -42,7 +42,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[1].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[1].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[1].text}</h1>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[2].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[2].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[2].text}</h1>
               </div>
             </div>
@@ -80,7 +80,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[3].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[3].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[3].text}</h1>
               </div>
             </div>
@@ -99,7 +99,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[4].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[4].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[4].text}</h1>
               </div>
             </div>
@@ -119,7 +119,7 @@ export const Projects = () => {
                 />
               </div>
               <div className="flex justify-between items-center pr-2">
-                <h1 className="font-medium text-lg">{PROJECTS[5].title}</h1>
+                <h1 className="font-medium text-lg text-white">{PROJECTS[5].title}</h1>
                 <h1 className="text-[#6d6d6d] text-base">{PROJECTS[5].text}</h1>
               </div>
             </div>
